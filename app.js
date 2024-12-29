@@ -39,7 +39,7 @@ function levelup() {
     h2.innerText = `Level ${level}`;
 
     // random button chosen
-    let randIdx = Math.floor(Math.random() * btns.length); // Corrected index range
+    let randIdx = Math.floor(Math.random() * btns.length);
     let randColor = btns[randIdx];
     let randBtn = document.querySelector(`.${randColor}`);
     gameSeq.push(randColor);
@@ -75,7 +75,7 @@ function btnPress() {
 }
 
 let allBtns = document.querySelectorAll(".btn");
-for (let btn of allBtns) { // Added `let` to prevent scope issues
+for (let btn of allBtns) { 
     btn.addEventListener("click", btnPress);
 }
 
